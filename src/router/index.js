@@ -57,7 +57,7 @@ Vue.use(VueRouter)
     name: 'AdminSide',
     component: AdminSide,
     children: [
-      {path: '/', name: 'AdminLogin', component: AdminLogin},
+      {path: '/', redirect: "addfood", name: 'AdminLogin', component: AdminLogin},
       {path: 'addfood', name: 'AddFood', component: AddFood},
       {path: 'editfood', name: 'EditFood', component: EditFood},
       {path: 'userlists', name: 'UserLists', component: UserLists},

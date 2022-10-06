@@ -43,6 +43,12 @@
                                 <p>Profile</p>
                             </router-link>
 						</li>
+
+						<li class="nav-item">
+							<router-link to="/adminside" class="nav-link h4 initialism">
+                                <p>Admin</p>
+                            </router-link>
+						</li>
 					</ul>
 				</div>
 			</nav>
