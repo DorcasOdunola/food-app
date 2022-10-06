@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import AdminLogin from '../components/adminlogin.vue'
+// import AdminLogin from '../components/adminlogin.vue'
 import LandingPage from '../components/landingpage.vue'
 import AddFood from '../components/addfood.vue'
 import FoodMenu from '../components/foodmenu.vue'
@@ -57,6 +57,7 @@ Vue.use(VueRouter)
     name: 'AdminSide',
     component: AdminSide,
     children: [
+      // {path: '/',  name: 'add', component: AdminLogin},
       {path: 'addfood', name: 'AddFood', component: AddFood},
       {path: 'editfood', name: 'EditFood', component: EditFood},
       {path: 'userlists', name: 'UserLists', component: UserLists},

@@ -46,15 +46,15 @@ export default {
 
         }
     },
-    mounted() {
-        this.checkAdmin()
-    },
+    // mounted() {
+    //     this.checkAdmin()
+    // },
     methods: {
-        checkAdmin() {
-            if (localStorage.getItem("AdminOnline") == null) {
-                window.location = `/adminside`;
-            }
-        },
+        // checkAdmin() {
+        //     if (localStorage.getItem("AdminOnline") == null) {
+        //         window.location = `/adminside`;
+        //     }
+        // },
         addFoodDetails() {
             if (localStorage.getItem("FoodDetails") != null) {
                 this.foodArray = JSON.parse(localStorage.getItem("FoodDetails"))
@@ -79,7 +79,7 @@ export default {
                 this.picture = "";
             } else {
                 document.getElementById("displaynotadded").innerHTML = "Pls input the food details";
-                 document.getElementById("displayadded").innerHTML = "";
+                document.getElementById("displayadded").innerHTML = "";
             }
         }
     }
